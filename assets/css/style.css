@@ -1,6 +1,6 @@
 :root {
   --primary-color: #00008b;
-  --secondary-color: #add8e6;
+  --secondary-color: #40e0d0;
   --tertiary-color: #000000;
 }
 
@@ -11,34 +11,28 @@ body {
 
 /* header styles start */
 header {
-  padding: 20px 40px 20px 0;
   background-color: #464646;
-  justify-content: space-between;
+  justify-content:space-between;
 }
 
-header h1 {
+header h1 a {
   background: var(--secondary-color);
   font-weight: bold;
-  margin: 0;
   font-size: 48px;
-  padding: 10px 10px 10px 40px;
-}
-
-header a {
   text-decoration: none;
+  padding: 0 20px 0 40px;
 }
 
 header nav ul {
-  justify-content: space-between;
-  padding: 20px 20px 0 20px;
-  list-style: none;
+  padding: 30px 20px 0 20px;
 }
 
 header nav ul li a {
+  list-style: none;
+  font-size: 24px;
+  font-weight: bold;
   color: var(--secondary-color);
-  font-size: 18px;
-  text-decoration: underline;
-  padding: 20px;
+  padding: 0 10px;
 }
 /* header styles end */
 
@@ -48,49 +42,71 @@ header nav ul li a {
 }
 
 .section-title {
-  font-size: 36px;
-  font-weight: bold;
-  flex: 0 1 20%;
+  font-size: 48px;
+  flex: 0 1 15%;
+  padding: 0 20px 0 0;
   text-align: right;
-  padding: 0 20px;
-  border-right: 10px solid var(--primary-color);
-  margin: 20px 0;
 }
 
 .section-title ul {
   list-style: none;
-  justify-content: flex-start;
+  font-weight: bold;
+  opacity: 0.7;
 }
 
-.about-content {
-  flex: 1 0 70%;
-  margin: 20px 10px;
+.section-content {
+  flex: 1 0 80%;
+  border-left: 5px solid var(--primary-color);
+  opacity: 0.7;
+  margin: 20px 0;
+  padding: 0 0 0 30px;
 }
 
-.projects {
-  flex: 1 0 70%;
-  margin: 10px;
+.section-content p {
+  opacity: 1;
+  font-size: 24px;
 }
 
-.projects img {
-  margin: 5px;
-  border: 2px solid var(--secondary-color);
-  padding: 5px;
+.section-content img {
+  border: 3px solid var(--secondary-color);
   object-fit: fill;
-  filter: blur(4px);
+  overflow: hidden;
+  opacity: 1;
 }
 
 .large-window img {
-  height: 50vh;
-  width: 65vw;
+  padding: 4px;
+  height: 400px;
+  width: 98%;
+  filter: blur(3px);
+}
+
+.large-window img:hover {
+  filter: blur(0);
 }
 
 .small-window img {
-  height: 30vh;
-  width: 30vw;
+  padding: 4px;
+  height: 150px;
+  width: 48%;
+  filter: blur(3px);
 }
 
-.contact-links {
-  flex: 1 0 70%;
-  margin: 10px;
+.small-window img:hover {
+  filter: blur(0);
+}
+
+.section-content ul {
+  margin: 0 20px 0 0;
+  padding: 40px 0;
+  list-style: none;
+  opacity: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 32px;
+}
+
+.section-content ul li a {
+  color: var(--tertiary-color);
 }
