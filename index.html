@@ -8,12 +8,12 @@
   </head>
   <body>
     <!-- navigation tags -->
-    <header>
+    <header class="flex-row">
         <h1>
           <a href="/">Koberstine</a>
         </h1>
         <nav>
-          <ul>
+          <ul class="flex-row">
             <li>
               <a href="#about">About Me</a>
             </li>
@@ -37,26 +37,36 @@
 
       <!-- about me -->
       <section id="about" class="flex-row">
-          <h2 class="section-title">
-              About Me
-          </h2>
-          <div class="about-content">
-            <!-- TODO: paragraph about me -->
-          </div>
+        <div class="section-title">
+          <ul>
+            <li>About</li>
+            <li>Me</li>
+          </ul>
+        </div>
+        <p class="about-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        </p>
       </section>
 
 
       <!-- sample work -->
       <section id="work" class="flex-row">
-          <h2 class="section-title">
-              Work
-          </h2>
-          <div class="window">
+          <div class="section-title">
+            <ul>
+              <li>Work</li>
+            </ul>
+          </div>
+          <div class="projects">
               <div class="large-window">
-
+                <img src="./assets/images/image1.jpg" alt="" />
               </div>
-              <div class="small window">
-
+              <div class="small-window">
+                <img src="./assets/images/image2.jpg" alt="" />
+                <img src="./assets/images/image3.jpg" alt="" />
+              </div>
+              <div class="small-window">
+                <img src="./assets/images/image4.jpg" alt="" />
+                <img src="./assets/images/image5.jpg" alt="" />
               </div>
           </div>
       </section>
@@ -64,13 +74,18 @@
       
       <!-- contact me-->
       <section id="contact" class="flex-row">
-          <h2 class="section-title">
-              Contact Me
-          </h2>
-          <a href="tel:813-347-1417">813.347.1417</a>
-          <a href="mailto:koberstine@hotmail.com">koberstine@hotmail.com</a>
-          <a href="https://github.com/koberstine">GitHub</a>
-          <a href="https://www.linkedin.com/in/chris-koberstine-754782a4">LinkedIn</a>
+          <div class="section-title">
+            <ul>
+              <li>Contact</li>
+              <li>Me</li>
+            </ul>
+          </div>
+          <div class="contact-links">
+            <a href="tel:813-347-1417">813.347.1417</a>
+            <a href="mailto:koberstine@hotmail.com">koberstine@hotmail.com</a>
+            <a href="https://github.com/koberstine">GitHub</a>
+            <a href="https://www.linkedin.com/in/chris-koberstine-754782a4">LinkedIn</a>
+          </div>
       </section>
 
 
