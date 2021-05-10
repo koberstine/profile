@@ -110,3 +110,28 @@ header nav ul li a {
 .section-content ul li a {
   color: var(--tertiary-color);
 }
+
+.resume-title {
+  font-size: 36px;
+  flex: 0 1 15%;
+  padding: 0 20px 0 0;
+  text-align: right;
+}
+
+.resume-title ul {
+  list-style: none;
+  font-weight: bold;
+  opacity: 0.7;
+}
+
+.resume-content {
+  flex: 1 0 80%;
+  border-left: 5px solid var(--primary-color);
+  opacity: 0.7;
+  margin: 20px 0;
+  padding: 0 0 0 30px;
+}
+
+.resume-content ul li {
+  font-size: 20px;
+}
